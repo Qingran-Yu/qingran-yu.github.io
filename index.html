@@ -400,6 +400,74 @@
             font-style: italic;
         }
 
+        /* 双视频网格布局 */
+        .video-grid-double {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin: 0.8rem 0 0.5rem;
+        }
+
+        .video-grid-double .video-platform {
+            background: #0f172a;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+        }
+
+        .video-grid-double .video-platform iframe {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border: 0;
+            display: block;
+        }
+
+        .video-grid-double .video-platform .platform-label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.4rem 0.8rem;
+            background: white;
+            border-top: 1px solid var(--border);
+            font-size: 0.8rem;
+        }
+
+        .video-grid-double .video-platform .platform-label .label-left {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-weight: 500;
+            color: var(--text);
+        }
+
+        .video-grid-double .video-platform .platform-label .label-left i {
+            font-size: 1rem;
+        }
+
+        .video-grid-double .video-platform .platform-label .label-left .bili-icon {
+            color: #00a1d6;
+        }
+        .video-grid-double .video-platform .platform-label .label-left .yt-icon {
+            color: #ff0000;
+        }
+
+        .video-grid-double .video-platform .platform-label .label-right a {
+            color: var(--primary-light);
+            text-decoration: none;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        .video-grid-double .video-platform .platform-label .label-right a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 700px) {
+            .video-grid-double {
+                grid-template-columns: 1fr;
+            }
+        }
+
         .footer {
             margin-top: 3.5rem;
             padding-top: 2rem;
@@ -656,9 +724,28 @@
                     <div class="awards">
                         <div class="award-line"><i class="fas fa-trophy"></i> 2024 Chaoyang District Youth Science &amp; Technology Innovation Competition — 2nd Prize</div>
                     </div>
+
+                    <!-- 双视频：B站 + YouTube -->
+                    <div class="video-grid-double">
+                        <div class="video-platform">
+                            <iframe src="//player.bilibili.com/player.html?bvid=BV13fgA6dE3p&page=1" allowfullscreen></iframe>
+                            <div class="platform-label">
+                                <span class="label-left"><i class="fab fa-bilibili bili-icon"></i> Bilibili</span>
+                                <span class="label-right"><a href="https://www.bilibili.com/video/BV13fgA6dE3p" target="_blank">在B站观看 →</a></span>
+                            </div>
+                        </div>
+                        <div class="video-platform">
+                            <iframe src="https://www.youtube.com/embed/7wiV1ixoino" allowfullscreen></iframe>
+                            <div class="platform-label">
+                                <span class="label-left"><i class="fab fa-youtube yt-icon"></i> YouTube</span>
+                                <span class="label-right"><a href="https://youtu.be/7wiV1ixoino" target="_blank">Watch on YouTube →</a></span>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="btn-group">
                         <a href="support/paper/ruler_paper.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
-                        <a href="support/video/ruler_video.mp4" target="_blank"><i class="fas fa-video"></i> Video</a>
+                        <a href="#"><i class="fas fa-video"></i> Video</a>
                     </div>
                 </div>
 
@@ -701,9 +788,28 @@
                         <div class="award-line"><i class="fas fa-trophy"></i> 2023 Chaoyang District Jinpeng Science &amp; Technology Forum — 2nd Prize</div>
                         <div class="award-line"><i class="fas fa-trophy"></i> 2023 Chaoyang District Youth Science &amp; Technology Innovation Competition — 2nd Prize</div>
                     </div>
+
+                    <!-- 双视频：B站 + YouTube -->
+                    <div class="video-grid-double">
+                        <div class="video-platform">
+                            <iframe src="//player.bilibili.com/player.html?bvid=BV1gfgA6dEWa&page=1" allowfullscreen></iframe>
+                            <div class="platform-label">
+                                <span class="label-left"><i class="fab fa-bilibili bili-icon"></i> Bilibili</span>
+                                <span class="label-right"><a href="https://www.bilibili.com/video/BV1gfgA6dEWa" target="_blank">在B站观看 →</a></span>
+                            </div>
+                        </div>
+                        <div class="video-platform">
+                            <iframe src="https://www.youtube.com/embed/XA_zAl6b8ec" allowfullscreen></iframe>
+                            <div class="platform-label">
+                                <span class="label-left"><i class="fab fa-youtube yt-icon"></i> YouTube</span>
+                                <span class="label-right"><a href="https://youtu.be/XA_zAl6b8ec" target="_blank">Watch on YouTube →</a></span>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="btn-group">
                         <a href="support/paper/mssu_paper.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
-                        <a href="support/video/mssu_video.mp4" target="_blank"><i class="fas fa-video"></i> Video</a>
+                        <a href="#"><i class="fas fa-video"></i> Video</a>
                     </div>
                 </div>
 
@@ -740,8 +846,27 @@
                     <div class="awards">
                         <div class="award-line"><i class="fas fa-trophy"></i> 2022 Dongcheng District Youth Science &amp; Technology Innovation Competition — 2nd Prize</div>
                     </div>
+
+                    <!-- 双视频：B站 + YouTube -->
+                    <div class="video-grid-double">
+                        <div class="video-platform">
+                            <iframe src="//player.bilibili.com/player.html?bvid=BV1ucgP6sEBz&page=1" allowfullscreen></iframe>
+                            <div class="platform-label">
+                                <span class="label-left"><i class="fab fa-bilibili bili-icon"></i> Bilibili</span>
+                                <span class="label-right"><a href="https://www.bilibili.com/video/BV1ucgP6sEBz" target="_blank">在B站观看 →</a></span>
+                            </div>
+                        </div>
+                        <div class="video-platform">
+                            <iframe src="https://www.youtube.com/embed/-TPswsBkdb0" allowfullscreen></iframe>
+                            <div class="platform-label">
+                                <span class="label-left"><i class="fab fa-youtube yt-icon"></i> YouTube</span>
+                                <span class="label-right"><a href="https://youtu.be/-TPswsBkdb0" target="_blank">Watch on YouTube →</a></span>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="btn-group">
-                        <a href="support/video/eraser_video.mp4" target="_blank"><i class="fas fa-video"></i> Video</a>
+                        <a href="#"><i class="fas fa-video"></i> Video</a>
                     </div>
                 </div>
 
@@ -779,9 +904,28 @@
                         <div class="award-line"><i class="fas fa-trophy"></i> 2021 Dongcheng District Jinpeng Science &amp; Technology Forum — 3rd Prize</div>
                         <div class="award-line"><i class="fas fa-trophy"></i> 2021 Dongcheng District Youth Science &amp; Technology Innovation Competition — 2nd Prize</div>
                     </div>
+
+                    <!-- 双视频：B站 + YouTube -->
+                    <div class="video-grid-double">
+                        <div class="video-platform">
+                            <iframe src="//player.bilibili.com/player.html?bvid=BV13ZgA64EdL&page=1" allowfullscreen></iframe>
+                            <div class="platform-label">
+                                <span class="label-left"><i class="fab fa-bilibili bili-icon"></i> Bilibili</span>
+                                <span class="label-right"><a href="https://www.bilibili.com/video/BV13ZgA64EdL" target="_blank">在B站观看 →</a></span>
+                            </div>
+                        </div>
+                        <div class="video-platform">
+                            <iframe src="https://www.youtube.com/embed/lPfj6tjviRU" allowfullscreen></iframe>
+                            <div class="platform-label">
+                                <span class="label-left"><i class="fab fa-youtube yt-icon"></i> YouTube</span>
+                                <span class="label-right"><a href="https://youtu.be/lPfj6tjviRU" target="_blank">Watch on YouTube →</a></span>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="btn-group">
                         <a href="support/paper/manhole_paper.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
-                        <a href="support/video/manhole_video.mp4" target="_blank"><i class="fas fa-video"></i> Video</a>
+                        <a href="#"><i class="fas fa-video"></i> Video</a>
                     </div>
                 </div>
 
@@ -816,9 +960,28 @@
                         <div class="award-line"><i class="fas fa-trophy"></i> 2020 Beijing Municipal Education Commission &amp; UNESCO — 1st Prize</div>
                         <div class="award-line"><i class="fas fa-copyright"></i> Copyright Registration Certificate</div>
                     </div>
+
+                    <!-- 双视频：B站 + YouTube -->
+                    <div class="video-grid-double">
+                        <div class="video-platform">
+                            <iframe src="//player.bilibili.com/player.html?bvid=BV1TNgP6QEB1&page=1" allowfullscreen></iframe>
+                            <div class="platform-label">
+                                <span class="label-left"><i class="fab fa-bilibili bili-icon"></i> Bilibili</span>
+                                <span class="label-right"><a href="https://www.bilibili.com/video/BV1TNgP6QEB1" target="_blank">在B站观看 →</a></span>
+                            </div>
+                        </div>
+                        <div class="video-platform">
+                            <iframe src="https://www.youtube.com/embed/rPxDDfJHYQE" allowfullscreen></iframe>
+                            <div class="platform-label">
+                                <span class="label-left"><i class="fab fa-youtube yt-icon"></i> YouTube</span>
+                                <span class="label-right"><a href="https://youtu.be/rPxDDfJHYQE" target="_blank">Watch on YouTube →</a></span>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="btn-group">
                         <a href="support/report/chess_report.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Report</a>
-                        <a href="support/video/chess_video.mp4" target="_blank"><i class="fas fa-video"></i> Video</a>
+                        <a href="#"><i class="fas fa-video"></i> Video</a>
                         <a href="support/prototype/chess_prototype.pdf" target="_blank"><i class="fas fa-cube"></i> Prototype</a>
                     </div>
                 </div>
